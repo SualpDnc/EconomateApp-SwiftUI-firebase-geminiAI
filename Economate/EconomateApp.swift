@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+//TEST
 @main
 struct EconomateApp: App {
     var body: some Scene {
