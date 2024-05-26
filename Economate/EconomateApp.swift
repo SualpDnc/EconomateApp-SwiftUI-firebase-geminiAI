@@ -11,7 +11,7 @@ import SwiftUI
 struct EconomateApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SignView()
         }
     }
 }

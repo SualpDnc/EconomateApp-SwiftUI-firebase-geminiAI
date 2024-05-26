@@ -8,17 +8,45 @@
 
 /* Begin PBXBuildFile section */
 		EB11A98B2BDE8B1B00039964 /* EconomateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11A98A2BDE8B1B00039964 /* EconomateApp.swift */; };
-		EB11A98D2BDE8B1B00039964 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11A98C2BDE8B1B00039964 /* ContentView.swift */; };
+		EB11A98D2BDE8B1B00039964 /* SignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11A98C2BDE8B1B00039964 /* SignView.swift */; };
 		EB11A98F2BDE8B1C00039964 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB11A98E2BDE8B1C00039964 /* Assets.xcassets */; };
 		EB11A9922BDE8B1C00039964 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB11A9912BDE8B1C00039964 /* Preview Assets.xcassets */; };
+		EB11A9992BDE8BA500039964 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11A9982BDE8BA500039964 /* MainView.swift */; };
+		EB11A99D2BDE8C3800039964 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11A99C2BDE8C3800039964 /* ScannerView.swift */; };
+		EB11A99F2BDE8F6700039964 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11A99E2BDE8F6700039964 /* ProfileView.swift */; };
+		EB11A9A12BDE8FC000039964 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11A9A02BDE8FC000039964 /* SettingsView.swift */; };
+		EB11A9A72BDEA1DF00039964 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11A9A62BDEA1DF00039964 /* DashboardView.swift */; };
+		EB233C152BFF9101008388A6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB233C142BFF9101008388A6 /* GoogleService-Info.plist */; };
+		EB233C172BFF919B008388A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB233C162BFF919B008388A6 /* AppDelegate.swift */; };
+		EB233C1C2BFF9273008388A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB233C1B2BFF9273008388A6 /* User.swift */; };
+		EB233C1F2BFF92DD008388A6 /* SignViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB233C1E2BFF92DD008388A6 /* SignViewModel.swift */; };
+		EB233C232C03B649008388A6 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB233C222C03B649008388A6 /* FirebaseManager.swift */; };
+		EB233C262C03B775008388A6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EB233C252C03B775008388A6 /* FirebaseAuth */; };
+		EB233C2A2C03B7EA008388A6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EB233C292C03B7EA008388A6 /* FirebaseFirestore */; };
+		EB233C2C2C03B7EA008388A6 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EB233C2B2C03B7EA008388A6 /* FirebaseFirestoreSwift */; };
+		EB233C2E2C03B9B1008388A6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB233C2D2C03B9B1008388A6 /* NetworkManager.swift */; };
+		EBF883012BF7DEB700209FF6 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF883002BF7DEB700209FF6 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EB11A9872BDE8B1B00039964 /* Economate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Economate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB11A98A2BDE8B1B00039964 /* EconomateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EconomateApp.swift; sourceTree = "<group>"; };
-		EB11A98C2BDE8B1B00039964 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EB11A98C2BDE8B1B00039964 /* SignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignView.swift; sourceTree = "<group>"; };
 		EB11A98E2BDE8B1C00039964 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB11A9912BDE8B1C00039964 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EB11A9982BDE8BA500039964 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		EB11A99C2BDE8C3800039964 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		EB11A99E2BDE8F6700039964 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		EB11A9A02BDE8FC000039964 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		EB11A9A62BDEA1DF00039964 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		EB233C142BFF9101008388A6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EB233C162BFF919B008388A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB233C1B2BFF9273008388A6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EB233C1E2BFF92DD008388A6 /* SignViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewModel.swift; sourceTree = "<group>"; };
+		EB233C222C03B649008388A6 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		EB233C282C03B7D7008388A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EB233C2D2C03B9B1008388A6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EBF883002BF7DEB700209FF6 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +54,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB233C262C03B775008388A6 /* FirebaseAuth in Frameworks */,
+				EB233C2A2C03B7EA008388A6 /* FirebaseFirestore in Frameworks */,
+				EB233C2C2C03B7EA008388A6 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +68,7 @@
 			children = (
 				EB11A9892BDE8B1B00039964 /* Economate */,
 				EB11A9882BDE8B1B00039964 /* Products */,
+				EB233C242C03B775008388A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,9 +83,17 @@
 		EB11A9892BDE8B1B00039964 /* Economate */ = {
 			isa = PBXGroup;
 			children = (
+				EB233C282C03B7D7008388A6 /* Info.plist */,
+				EB233C212C03B63F008388A6 /* Network Manager */,
+				EB233C1A2BFF923D008388A6 /* Views */,
+				EB233C192BFF9237008388A6 /* Models */,
+				EB233C182BFF922C008388A6 /* Screen */,
+				EB233C162BFF919B008388A6 /* AppDelegate.swift */,
 				EB11A98A2BDE8B1B00039964 /* EconomateApp.swift */,
-				EB11A98C2BDE8B1B00039964 /* ContentView.swift */,
+				EB11A9982BDE8BA500039964 /* MainView.swift */,
+				EBF883002BF7DEB700209FF6 /* ImagePicker.swift */,
 				EB11A98E2BDE8B1C00039964 /* Assets.xcassets */,
+				EB233C142BFF9101008388A6 /* GoogleService-Info.plist */,
 				EB11A9902BDE8B1C00039964 /* Preview Content */,
 			);
 			path = Economate;
@@ -65,6 +105,58 @@
 				EB11A9912BDE8B1C00039964 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EB233C182BFF922C008388A6 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				EB233C1D2BFF92CD008388A6 /* SignView */,
+				EB11A9A62BDEA1DF00039964 /* DashboardView.swift */,
+				EB11A99C2BDE8C3800039964 /* ScannerView.swift */,
+				EB11A99E2BDE8F6700039964 /* ProfileView.swift */,
+				EB11A9A02BDE8FC000039964 /* SettingsView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		EB233C192BFF9237008388A6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EB233C1B2BFF9273008388A6 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EB233C1A2BFF923D008388A6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EB233C1D2BFF92CD008388A6 /* SignView */ = {
+			isa = PBXGroup;
+			children = (
+				EB11A98C2BDE8B1B00039964 /* SignView.swift */,
+				EB233C1E2BFF92DD008388A6 /* SignViewModel.swift */,
+			);
+			path = SignView;
+			sourceTree = "<group>";
+		};
+		EB233C212C03B63F008388A6 /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EB233C222C03B649008388A6 /* FirebaseManager.swift */,
+				EB233C2D2C03B9B1008388A6 /* NetworkManager.swift */,
+			);
+			path = "Network Manager";
+			sourceTree = "<group>";
+		};
+		EB233C242C03B775008388A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +175,11 @@
 			dependencies = (
 			);
 			name = Economate;
+			packageProductDependencies = (
+				EB233C252C03B775008388A6 /* FirebaseAuth */,
+				EB233C292C03B7EA008388A6 /* FirebaseFirestore */,
+				EB233C2B2C03B7EA008388A6 /* FirebaseFirestoreSwift */,
+			);
 			productName = Economate;
 			productReference = EB11A9872BDE8B1B00039964 /* Economate.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +208,9 @@
 				Base,
 			);
 			mainGroup = EB11A97E2BDE8B1B00039964;
+			packageReferences = (
+				EB233C202C03ADE8008388A6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = EB11A9882BDE8B1B00039964 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +227,7 @@
 			files = (
 				EB11A9922BDE8B1C00039964 /* Preview Assets.xcassets in Resources */,
 				EB11A98F2BDE8B1C00039964 /* Assets.xcassets in Resources */,
+				EB233C152BFF9101008388A6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +238,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB11A98D2BDE8B1B00039964 /* ContentView.swift in Sources */,
+				EB233C232C03B649008388A6 /* FirebaseManager.swift in Sources */,
+				EB233C1F2BFF92DD008388A6 /* SignViewModel.swift in Sources */,
+				EB11A98D2BDE8B1B00039964 /* SignView.swift in Sources */,
+				EB233C2E2C03B9B1008388A6 /* NetworkManager.swift in Sources */,
+				EB11A99D2BDE8C3800039964 /* ScannerView.swift in Sources */,
+				EB11A99F2BDE8F6700039964 /* ProfileView.swift in Sources */,
+				EB233C172BFF919B008388A6 /* AppDelegate.swift in Sources */,
+				EB11A9A72BDEA1DF00039964 /* DashboardView.swift in Sources */,
+				EB11A9A12BDE8FC000039964 /* SettingsView.swift in Sources */,
+				EBF883012BF7DEB700209FF6 /* ImagePicker.swift in Sources */,
+				EB11A9992BDE8BA500039964 /* MainView.swift in Sources */,
+				EB233C1C2BFF9273008388A6 /* User.swift in Sources */,
 				EB11A98B2BDE8B1B00039964 /* EconomateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +382,8 @@
 				DEVELOPMENT_TEAM = A7P92PH4B4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Economate/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow the camera usage";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +413,8 @@
 				DEVELOPMENT_TEAM = A7P92PH4B4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Economate/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow the camera usage";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +455,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EB233C202C03ADE8008388A6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EB233C252C03B775008388A6 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB233C202C03ADE8008388A6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		EB233C292C03B7EA008388A6 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB233C202C03ADE8008388A6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		EB233C2B2C03B7EA008388A6 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB233C202C03ADE8008388A6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EB11A97F2BDE8B1B00039964 /* Project object */;
 }
