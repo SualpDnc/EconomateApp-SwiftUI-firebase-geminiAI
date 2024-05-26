@@ -25,6 +25,8 @@
 		EB233C2A2C03B7EA008388A6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EB233C292C03B7EA008388A6 /* FirebaseFirestore */; };
 		EB233C2C2C03B7EA008388A6 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EB233C2B2C03B7EA008388A6 /* FirebaseFirestoreSwift */; };
 		EB233C2E2C03B9B1008388A6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB233C2D2C03B9B1008388A6 /* NetworkManager.swift */; };
+		EB233C302C03C523008388A6 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB233C2F2C03C523008388A6 /* AppState.swift */; };
+		EB233C322C03C537008388A6 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB233C312C03C537008388A6 /* RootView.swift */; };
 		EBF883012BF7DEB700209FF6 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF883002BF7DEB700209FF6 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,8 @@
 		EB233C222C03B649008388A6 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		EB233C282C03B7D7008388A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EB233C2D2C03B9B1008388A6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EB233C2F2C03C523008388A6 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		EB233C312C03C537008388A6 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		EBF883002BF7DEB700209FF6 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +99,8 @@
 				EB11A98E2BDE8B1C00039964 /* Assets.xcassets */,
 				EB233C142BFF9101008388A6 /* GoogleService-Info.plist */,
 				EB11A9902BDE8B1C00039964 /* Preview Content */,
+				EB233C2F2C03C523008388A6 /* AppState.swift */,
+				EB233C312C03C537008388A6 /* RootView.swift */,
 			);
 			path = Economate;
 			sourceTree = "<group>";
@@ -247,10 +253,12 @@
 				EB233C172BFF919B008388A6 /* AppDelegate.swift in Sources */,
 				EB11A9A72BDEA1DF00039964 /* DashboardView.swift in Sources */,
 				EB11A9A12BDE8FC000039964 /* SettingsView.swift in Sources */,
+				EB233C302C03C523008388A6 /* AppState.swift in Sources */,
 				EBF883012BF7DEB700209FF6 /* ImagePicker.swift in Sources */,
 				EB11A9992BDE8BA500039964 /* MainView.swift in Sources */,
 				EB233C1C2BFF9273008388A6 /* User.swift in Sources */,
 				EB11A98B2BDE8B1B00039964 /* EconomateApp.swift in Sources */,
+				EB233C322C03C537008388A6 /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,10 +6,26 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseFirestore
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        
+        FirebaseApp.configure()
+        let db = Firestore.firestore()
+        
+        return true
+    }
+}
+
 
 struct SignView: View {
     
+    @State var showingSignUp = false
     @StateObject private var viewModel = SignViewModel()
+    
     
     var body: some View {
             VStack {
@@ -29,13 +45,13 @@ struct SignView: View {
                     .padding(.horizontal).padding(.bottom,10)
                     .autocapitalization(.none)
                     .keyboardType(.emailAddress)
-                
-                TextField("Name", text: $viewModel.name)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding(.horizontal).padding(.bottom,10)
-                    .autocapitalization(.none)
-                    .keyboardType(.emailAddress)
-                    .padding(.top,7)
+//
+//                TextField("Name", text: $viewModel.name)
+//                    .textFieldStyle(RoundedBorderTextFieldStyle())
+//                    .padding(.horizontal).padding(.bottom,10)
+//                    .autocapitalization(.none)
+//                    .keyboardType(.emailAddress)
+//                    .padding(.top,7)
                     
                     
                 SecureField("Password", text: $viewModel.password)
@@ -44,7 +60,6 @@ struct SignView: View {
                 
                 Button(action: {
                     viewModel.loginTapped()
-//                    $viewModel.showingMainView.toggle()
                               }) {
                                   Text("Sign In")
                                       .frame(minWidth: 200, maxWidth:200)
@@ -55,14 +70,28 @@ struct SignView: View {
                                       .cornerRadius(25)
                                       .padding(.horizontal)
                               }
-                              .fullScreenCover(isPresented: $viewModel.showingMainView) {
+                              .alert(isPresented: $viewModel.showAlert) {
+                                   Alert(title: Text("Warning"),
+                                         message: Text("Email and password can not be empty."),
+                                         dismissButton:
+                                             .default(Text("OK"))
+                                   )
+                              }
+//                              .alert(isPresented: $viewModel.showWrongAlert) {
+//                                  Alert(title: Text("Warning"),
+//                                        message: Text("Wrong Email or password"),
+//                                        dismissButton:
+//                                            .default(Text("OK"))
+//                                  )
+//                              }
+                              .fullScreenCover(isPresented: $viewModel.isLoggedIn) {
                                   MainView()
-                }
+                              }
                 
                 Button("Don't have an account? Sign Up") {
-//                    $viewModel.showingSignUp.toggle()
+                    showingSignUp.toggle()
                 }
-                .sheet(isPresented: $viewModel.showingSignUp) {
+                .sheet(isPresented: $showingSignUp) {
                     SignUpView()
                 }
                 .padding().padding(.top,20)
