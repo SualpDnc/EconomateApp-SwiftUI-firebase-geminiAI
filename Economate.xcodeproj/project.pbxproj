@@ -25,8 +25,7 @@
 		EB233C2A2C03B7EA008388A6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EB233C292C03B7EA008388A6 /* FirebaseFirestore */; };
 		EB233C2C2C03B7EA008388A6 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EB233C2B2C03B7EA008388A6 /* FirebaseFirestoreSwift */; };
 		EB233C2E2C03B9B1008388A6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB233C2D2C03B9B1008388A6 /* NetworkManager.swift */; };
-		EB233C302C03C523008388A6 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB233C2F2C03C523008388A6 /* AppState.swift */; };
-		EB233C322C03C537008388A6 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB233C312C03C537008388A6 /* RootView.swift */; };
+		EBDD3D6A2C07C3900083A843 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDD3D692C07C3900083A843 /* ProfileViewModel.swift */; };
 		EBF883012BF7DEB700209FF6 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF883002BF7DEB700209FF6 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,8 +47,7 @@
 		EB233C222C03B649008388A6 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		EB233C282C03B7D7008388A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EB233C2D2C03B9B1008388A6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		EB233C2F2C03C523008388A6 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
-		EB233C312C03C537008388A6 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		EBDD3D692C07C3900083A843 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		EBF883002BF7DEB700209FF6 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,7 +70,6 @@
 			children = (
 				EB11A9892BDE8B1B00039964 /* Economate */,
 				EB11A9882BDE8B1B00039964 /* Products */,
-				EB233C242C03B775008388A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +94,6 @@
 				EB11A98E2BDE8B1C00039964 /* Assets.xcassets */,
 				EB233C142BFF9101008388A6 /* GoogleService-Info.plist */,
 				EB11A9902BDE8B1C00039964 /* Preview Content */,
-				EB233C2F2C03C523008388A6 /* AppState.swift */,
-				EB233C312C03C537008388A6 /* RootView.swift */,
 			);
 			path = Economate;
 			sourceTree = "<group>";
@@ -114,13 +109,12 @@
 		EB233C182BFF922C008388A6 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				EBDD3D682C07BC290083A843 /* ProfileView */,
+				EBDD3D672C07BC160083A843 /* ScannerView */,
+				EBDD3D662C07BA920083A843 /* DashboardView */,
+				EBDD3D652C07BA840083A843 /* MainView */,
+				EBDD3D642C07B8D40083A843 /* SettingsView */,
 				EB233C1D2BFF92CD008388A6 /* SignView */,
-				EB11A9982BDE8BA500039964 /* MainView.swift */,
-				EB11A9A62BDEA1DF00039964 /* DashboardView.swift */,
-				EB11A99C2BDE8C3800039964 /* ScannerView.swift */,
-				EB11A99E2BDE8F6700039964 /* ProfileView.swift */,
-				EB11A9A02BDE8FC000039964 /* SettingsView.swift */,
-				EBF883002BF7DEB700209FF6 /* ImagePicker.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -158,11 +152,46 @@
 			path = "Network Manager";
 			sourceTree = "<group>";
 		};
-		EB233C242C03B775008388A6 /* Frameworks */ = {
+		EBDD3D642C07B8D40083A843 /* SettingsView */ = {
 			isa = PBXGroup;
 			children = (
+				EB11A9A02BDE8FC000039964 /* SettingsView.swift */,
 			);
-			name = Frameworks;
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		EBDD3D652C07BA840083A843 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				EB11A9982BDE8BA500039964 /* MainView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		EBDD3D662C07BA920083A843 /* DashboardView */ = {
+			isa = PBXGroup;
+			children = (
+				EB11A9A62BDEA1DF00039964 /* DashboardView.swift */,
+			);
+			path = DashboardView;
+			sourceTree = "<group>";
+		};
+		EBDD3D672C07BC160083A843 /* ScannerView */ = {
+			isa = PBXGroup;
+			children = (
+				EBF883002BF7DEB700209FF6 /* ImagePicker.swift */,
+				EB11A99C2BDE8C3800039964 /* ScannerView.swift */,
+			);
+			path = ScannerView;
+			sourceTree = "<group>";
+		};
+		EBDD3D682C07BC290083A843 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				EB11A99E2BDE8F6700039964 /* ProfileView.swift */,
+				EBDD3D692C07C3900083A843 /* ProfileViewModel.swift */,
+			);
+			path = ProfileView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,15 +279,14 @@
 				EB233C2E2C03B9B1008388A6 /* NetworkManager.swift in Sources */,
 				EB11A99D2BDE8C3800039964 /* ScannerView.swift in Sources */,
 				EB11A99F2BDE8F6700039964 /* ProfileView.swift in Sources */,
+				EBDD3D6A2C07C3900083A843 /* ProfileViewModel.swift in Sources */,
 				EB233C172BFF919B008388A6 /* AppDelegate.swift in Sources */,
 				EB11A9A72BDEA1DF00039964 /* DashboardView.swift in Sources */,
 				EB11A9A12BDE8FC000039964 /* SettingsView.swift in Sources */,
-				EB233C302C03C523008388A6 /* AppState.swift in Sources */,
 				EBF883012BF7DEB700209FF6 /* ImagePicker.swift in Sources */,
 				EB11A9992BDE8BA500039964 /* MainView.swift in Sources */,
 				EB233C1C2BFF9273008388A6 /* User.swift in Sources */,
 				EB11A98B2BDE8B1B00039964 /* EconomateApp.swift in Sources */,
-				EB233C322C03C537008388A6 /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
