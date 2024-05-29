@@ -77,13 +77,14 @@ struct SignView: View {
                                              .default(Text("OK"))
                                    )
                               }
-//                              .alert(isPresented: $viewModel.showWrongAlert) {
-//                                  Alert(title: Text("Warning"),
-//                                        message: Text("Wrong Email or password"),
-//                                        dismissButton:
-//                                            .default(Text("OK"))
-//                                  )
-//                              }
+                              .alert(isPresented: $viewModel.showWrongAlert) {
+                                   Alert(title: Text("Warning"),
+                                         message: Text("Email or password is wrong."),
+                                         dismissButton:
+                                             .default(Text("OK"))
+                                   )
+                              }
+                
                               .fullScreenCover(isPresented: $viewModel.isLoggedIn) {
                                   MainView()
                               }
@@ -104,23 +105,24 @@ struct SignView: View {
 struct SignUpView: View {
     @State private var email = ""
     @State private var password = ""
+    @StateObject private var viewModel = SignViewModel()
     var body: some View {
         Text("Sign Up")
             .font(.title)
             .fontWeight(.semibold)
             .padding(.bottom, 35)
 
-        TextField("Email", text: $email)
+        TextField("Email", text: $viewModel.emailF)
             .textFieldStyle(RoundedBorderTextFieldStyle())
             .padding(.horizontal).padding(.bottom,10)
             .autocapitalization(.none)
             .keyboardType(.emailAddress)
             
-        SecureField("Password", text: $password)
+        SecureField("Password", text: $viewModel.passwordF)
             .textFieldStyle(RoundedBorderTextFieldStyle())
             .padding().padding(.bottom,10)
         Button(action: {
-                    
+            viewModel.signUpTapped()
                 }) {
                     Text("Sign Up")
                         .frame(minWidth: 200, maxWidth:200)
@@ -130,6 +132,13 @@ struct SignUpView: View {
                         .background(Color.blue)
                         .cornerRadius(25)
                         .padding(.horizontal)
+                }
+                .alert(isPresented: $viewModel.isSignedUp) {
+                     Alert(title: Text("Warning"),
+                           message: Text("Successfully signed up."),
+                           dismissButton:
+                               .default(Text("OK"))
+                     )
                 }
                  
         }

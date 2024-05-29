@@ -8,6 +8,8 @@
 import Foundation
 import Firebase
 import FirebaseFirestore
+import FirebaseAuth
+
 
 
 class FirebaseManager: NetworkManagerProtocol{
@@ -23,6 +25,7 @@ class FirebaseManager: NetworkManagerProtocol{
     @Published var errorMessage: Error?
     @Published var showErrorAlert: Bool = false
     @Published var isLoggedIn: Bool = false
+    @Published var isSignedUp: Bool = false
     
     
     private init(){
@@ -51,11 +54,30 @@ class FirebaseManager: NetworkManagerProtocol{
         
     }
     
+    func signUp(withEmail email: String, password: String) async throws {
+          do {
+             
+              let result2 = try await Auth.auth().createUser(withEmail: email, password: password)
+              DispatchQueue.main.async {
+                  self.userSession = result2.user
+                  self.isSignedUp = true
+                  print("issignedup true")
+              }
+          } catch {
+              DispatchQueue.main.async {
+                  self.errorMessage = error
+              }
+          }
+      }
+      
+    
     func signOut() {
         do{
             try Auth.auth().signOut()
-            self.userSession = nil
-            self.currentUser = nil
+            DispatchQueue.main.async {
+                self.userSession = nil
+                self.currentUser = nil
+            }
         }catch{
             print("Failed to sign out!!")
         }

@@ -10,6 +10,8 @@ import SwiftUI
 
 struct MainView: View {
     
+    @Environment(\.dismiss) private var dismiss
+    
     let columns: [GridItem] = [GridItem(.flexible()),
                                GridItem(.flexible())
     ]

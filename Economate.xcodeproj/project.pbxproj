@@ -94,8 +94,6 @@
 				EB233C182BFF922C008388A6 /* Screen */,
 				EB233C162BFF919B008388A6 /* AppDelegate.swift */,
 				EB11A98A2BDE8B1B00039964 /* EconomateApp.swift */,
-				EB11A9982BDE8BA500039964 /* MainView.swift */,
-				EBF883002BF7DEB700209FF6 /* ImagePicker.swift */,
 				EB11A98E2BDE8B1C00039964 /* Assets.xcassets */,
 				EB233C142BFF9101008388A6 /* GoogleService-Info.plist */,
 				EB11A9902BDE8B1C00039964 /* Preview Content */,
@@ -117,10 +115,12 @@
 			isa = PBXGroup;
 			children = (
 				EB233C1D2BFF92CD008388A6 /* SignView */,
+				EB11A9982BDE8BA500039964 /* MainView.swift */,
 				EB11A9A62BDEA1DF00039964 /* DashboardView.swift */,
 				EB11A99C2BDE8C3800039964 /* ScannerView.swift */,
 				EB11A99E2BDE8F6700039964 /* ProfileView.swift */,
 				EB11A9A02BDE8FC000039964 /* SettingsView.swift */,
+				EBF883002BF7DEB700209FF6 /* ImagePicker.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";

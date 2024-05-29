@@ -1,10 +1,3 @@
-//
-//  SettingsView.swift
-//  Economate
-//
-//  Created by Sualp Danacı on 28.04.2024.
-//
-
 import SwiftUI
 
 struct SettingsView: View {
@@ -13,14 +6,15 @@ struct SettingsView: View {
     @State private var selectedThemeIndex = 0
     @State private var showingAlert = false
     @State private var showingActionSheet = false
+    @State private var showSignIn = false
+    @Environment(\.dismiss) private var dismiss
     private let themes = ["Light", "Dark", "System"]
-
+    
     var body: some View {
         NavigationView {
             VStack{
                 Form {
                     Section(header: Text("Appearance")) {
-        
                         Toggle("Dark Mode", isOn: $darkModeEnabled)
                     }
                     
@@ -42,22 +36,32 @@ struct SettingsView: View {
                                 .destructive(Text("Sign Out")) {
                                     // Perform sign out action
                                     showingAlert = true
+                                    FirebaseManager.shared.signOut()
                                 },
                                 .cancel()
                             ])
                         }
                         .alert(isPresented: $showingAlert) {
-                            Alert(title: Text("Signed Out"), message: Text("You have been signed out successfully."), dismissButton: .default(Text("OK")))
+                            Alert(
+                                title: Text("Signed Out"),
+                                message: Text("You have been signed out successfully."),
+                                dismissButton: .default(Text("OK")) {
+                                    // Action to perform when OK is tapped
+                                    showSignIn = true
+                                }
+                            )
                         }
-                        
+                        .fullScreenCover(isPresented: $showSignIn) {
+                            SignView()
+                        }
                     }
                 }
-                
             }
             .navigationTitle("Settings")
         }
         .preferredColorScheme(darkModeEnabled ? .dark : .light)
         .edgesIgnoringSafeArea(.all)
+        
     }
 }
 
