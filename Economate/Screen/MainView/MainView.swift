@@ -12,30 +12,31 @@ struct MainView: View {
     
     @Environment(\.dismiss) private var dismiss
     
-    let columns: [GridItem] = [GridItem(.flexible()),
-                               GridItem(.flexible())
+    let columns: [GridItem] = [GridItem(.flexible())
+                            
     ]
     
     var body: some View {
         NavigationView {
             VStack(){
-                Spacer()
+               
                 Image("economate-logo")
                     .resizable()
                     .frame(width: 170, height: 110)
+                    .padding(.top,20)
                   
                 Spacer()
                 LazyVGrid(columns: columns){
                     
                     let extractedExpr: MainView.FrameworkTitleView = FrameworkTitleView(name: "Scanner", imageName: "barcode.viewfinder")
                     extractedExpr
-                    FrameworkTitleView(name: "Wallet", imageName: "creditcard.circle")
+                    //FrameworkTitleView(name: "Wallet", imageName: "creditcard.circle")
                     FrameworkTitleView(name: "Receipts", imageName: "newspaper")
                     FrameworkTitleView(name: "Dashboard", imageName: "chart.bar.xaxis")
-                    FrameworkTitleView(name: "Profile", imageName: "person")
+                    //FrameworkTitleView(name: "Profile", imageName: "person")
                     FrameworkTitleView(name: "Settings", imageName: "gearshape")
                 }
-                .padding(.top,-20).padding(.horizontal,20)
+               
                 
                 Spacer()
             }
@@ -90,12 +91,12 @@ struct MainView_Previews: PreviewProvider {
                             .scaledToFit()
                             .minimumScaleFactor(0.6)
                     }
-                    .padding(20)
+                    .padding(7)
                     .background(
                         RoundedRectangle(cornerRadius: 10)
                             .stroke(Color.white, lineWidth: 0)
-                            .frame(width: 160, height: 150)
-                            .background(RoundedRectangle(cornerRadius: 30).fill(Color.teal).opacity(0.1))
+                            .frame(width: 300, height: 120)
+                            .background(RoundedRectangle(cornerRadius: 20).fill(Color.teal).opacity(0.1))
                     )
                 }
             ).padding()
