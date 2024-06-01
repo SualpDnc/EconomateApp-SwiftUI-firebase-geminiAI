@@ -1,12 +1,16 @@
 import SwiftUI
 
+
 struct ScannerView: View {
     
     @State private var showSheet: Bool = false
     @State private var showImagePicker: Bool = false
     @State private var sourceType: UIImagePickerController.SourceType = .camera
-    
     @State private var image: UIImage?
+    @ObservedObject private var coordinator = ImagePickerCoordinator(image: .constant(nil), isShown: .constant(false))
+ 
+        
+
     
     var body: some View {
         
@@ -18,14 +22,22 @@ struct ScannerView: View {
                     self.showSheet = true
                 }) {
                     VStack {
+                        Spacer()
                         Image(systemName: "camera.circle")
                             .resizable()
                             .frame(width: 200, height: 200)
                             .foregroundColor(.blue)
-                            .padding(.bottom, 30)
+                         
                         Text("Scan Receipt")
                             .foregroundColor(.blue)
                             .font(.title)
+                        
+                        Spacer()
+                        
+                        Image("economate-logo")
+                            .resizable()
+                            .frame(width: 140, height: 80)
+                            .padding(.top,0)
                     }
                     .padding()
                 }
@@ -42,6 +54,11 @@ struct ScannerView: View {
                         .cancel()
                     ])
                 }
+                .fullScreenCover(isPresented: $coordinator.navigateToDashboard) {
+                    DashboardView()
+                }
+                
+              
             }
             .navigationTitle("")
             .toolbar {

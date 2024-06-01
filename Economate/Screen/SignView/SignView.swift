@@ -98,7 +98,15 @@ struct SignView: View {
                 .padding().padding(.top,20)
             }
             .padding()
-
+        
+        if viewModel.isLoading {
+                   Color.black.opacity(0)
+                       .edgesIgnoringSafeArea(.all)
+                   
+                   ProgressView("Loading...")
+                       .progressViewStyle(CircularProgressViewStyle())
+                       .scaleEffect(1.5, anchor: .center)
+               }
     }
 }
 

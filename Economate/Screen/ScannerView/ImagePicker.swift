@@ -1,14 +1,19 @@
 import Foundation
 import SwiftUI
+import GoogleGenerativeAI
 
-class ImagePickerCoordinator: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+
+class ImagePickerCoordinator: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate, ObservableObject{
     
     @Binding var image: UIImage?
     @Binding var isShown: Bool
+    @StateObject private var ocrManager = OcrManager()
+    @Published var navigateToDashboard = false
     
     init(image: Binding<UIImage?>, isShown: Binding<Bool>) {
         _image = image
         _isShown = isShown
+       
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -16,12 +21,18 @@ class ImagePickerCoordinator: NSObject, UINavigationControllerDelegate, UIImageP
         if let uiImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             image = uiImage
             isShown = false
+            if let unwrappedImage = image {
+                           Task {
+                               await ocrManager.imageProcess(image: unwrappedImage) 
+                           }
+            }
+            navigateToDashboard = true
         }
-        
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         isShown = false
+       
     }
     
 }

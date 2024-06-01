@@ -12,6 +12,7 @@ class SignViewModel: ObservableObject {
     @Published var isLoggedIn = false
     @Published var isSignedUp = false
     @Published var showWrongAlert = false
+    @Published var isLoading: Bool = false
     
     
     
@@ -23,6 +24,8 @@ class SignViewModel: ObservableObject {
             return
         }
         
+        isLoading = true
+        
         
         Task{
             do{
@@ -30,6 +33,7 @@ class SignViewModel: ObservableObject {
                 DispatchQueue.main.async {
                     //                        self.errorMessage = FirebaseManager.shared.errorMessage?.localizedDescription ?? ""
                     //                        self.showWrongAlert = FirebaseManager.shared.showErrorAlert
+                    self.isLoading = false
                     self.isLoggedIn = FirebaseManager.shared.isLoggedIn
                     
                     if(!self.isLoggedIn){
