@@ -25,6 +25,10 @@
 		EB233C2A2C03B7EA008388A6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EB233C292C03B7EA008388A6 /* FirebaseFirestore */; };
 		EB233C2C2C03B7EA008388A6 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EB233C2B2C03B7EA008388A6 /* FirebaseFirestoreSwift */; };
 		EB233C2E2C03B9B1008388A6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB233C2D2C03B9B1008388A6 /* NetworkManager.swift */; };
+		EB7D9A042C0A16E4006BE2E9 /* GenerativeAi-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB7D9A032C0A16E4006BE2E9 /* GenerativeAi-Info.plist */; };
+		EB7D9A062C0A173D006BE2E9 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7D9A052C0A173D006BE2E9 /* APIKey.swift */; };
+		EB7D9A0A2C0A6598006BE2E9 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = EB7D9A092C0A6598006BE2E9 /* GoogleGenerativeAI */; };
+		EB7D9A0C2C0A66B0006BE2E9 /* OcrManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7D9A0B2C0A66B0006BE2E9 /* OcrManager.swift */; };
 		EBDD3D6A2C07C3900083A843 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDD3D692C07C3900083A843 /* ProfileViewModel.swift */; };
 		EBF883012BF7DEB700209FF6 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF883002BF7DEB700209FF6 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
@@ -47,6 +51,9 @@
 		EB233C222C03B649008388A6 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		EB233C282C03B7D7008388A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EB233C2D2C03B9B1008388A6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EB7D9A032C0A16E4006BE2E9 /* GenerativeAi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GenerativeAi-Info.plist"; sourceTree = "<group>"; };
+		EB7D9A052C0A173D006BE2E9 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		EB7D9A0B2C0A66B0006BE2E9 /* OcrManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OcrManager.swift; sourceTree = "<group>"; };
 		EBDD3D692C07C3900083A843 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		EBF883002BF7DEB700209FF6 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,6 +66,7 @@
 				EB233C262C03B775008388A6 /* FirebaseAuth in Frameworks */,
 				EB233C2A2C03B7EA008388A6 /* FirebaseFirestore in Frameworks */,
 				EB233C2C2C03B7EA008388A6 /* FirebaseFirestoreSwift in Frameworks */,
+				EB7D9A0A2C0A6598006BE2E9 /* GoogleGenerativeAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +102,8 @@
 				EB11A98E2BDE8B1C00039964 /* Assets.xcassets */,
 				EB233C142BFF9101008388A6 /* GoogleService-Info.plist */,
 				EB11A9902BDE8B1C00039964 /* Preview Content */,
+				EB7D9A032C0A16E4006BE2E9 /* GenerativeAi-Info.plist */,
+				EB7D9A052C0A173D006BE2E9 /* APIKey.swift */,
 			);
 			path = Economate;
 			sourceTree = "<group>";
@@ -148,6 +158,7 @@
 			children = (
 				EB233C222C03B649008388A6 /* FirebaseManager.swift */,
 				EB233C2D2C03B9B1008388A6 /* NetworkManager.swift */,
+				EB7D9A0B2C0A66B0006BE2E9 /* OcrManager.swift */,
 			);
 			path = "Network Manager";
 			sourceTree = "<group>";
@@ -214,6 +225,7 @@
 				EB233C252C03B775008388A6 /* FirebaseAuth */,
 				EB233C292C03B7EA008388A6 /* FirebaseFirestore */,
 				EB233C2B2C03B7EA008388A6 /* FirebaseFirestoreSwift */,
+				EB7D9A092C0A6598006BE2E9 /* GoogleGenerativeAI */,
 			);
 			productName = Economate;
 			productReference = EB11A9872BDE8B1B00039964 /* Economate.app */;
@@ -245,6 +257,7 @@
 			mainGroup = EB11A97E2BDE8B1B00039964;
 			packageReferences = (
 				EB233C202C03ADE8008388A6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				EB7D9A082C0A6598006BE2E9 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
 			);
 			productRefGroup = EB11A9882BDE8B1B00039964 /* Products */;
 			projectDirPath = "";
@@ -262,6 +275,7 @@
 			files = (
 				EB11A9922BDE8B1C00039964 /* Preview Assets.xcassets in Resources */,
 				EB11A98F2BDE8B1C00039964 /* Assets.xcassets in Resources */,
+				EB7D9A042C0A16E4006BE2E9 /* GenerativeAi-Info.plist in Resources */,
 				EB233C152BFF9101008388A6 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB7D9A0C2C0A66B0006BE2E9 /* OcrManager.swift in Sources */,
 				EB233C232C03B649008388A6 /* FirebaseManager.swift in Sources */,
 				EB233C1F2BFF92DD008388A6 /* SignViewModel.swift in Sources */,
 				EB11A98D2BDE8B1B00039964 /* SignView.swift in Sources */,
@@ -282,6 +297,7 @@
 				EBDD3D6A2C07C3900083A843 /* ProfileViewModel.swift in Sources */,
 				EB233C172BFF919B008388A6 /* AppDelegate.swift in Sources */,
 				EB11A9A72BDEA1DF00039964 /* DashboardView.swift in Sources */,
+				EB7D9A062C0A173D006BE2E9 /* APIKey.swift in Sources */,
 				EB11A9A12BDE8FC000039964 /* SettingsView.swift in Sources */,
 				EBF883012BF7DEB700209FF6 /* ImagePicker.swift in Sources */,
 				EB11A9992BDE8BA500039964 /* MainView.swift in Sources */,
@@ -501,6 +517,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		EB7D9A082C0A6598006BE2E9 /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -518,6 +542,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EB233C202C03ADE8008388A6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestoreSwift;
+		};
+		EB7D9A092C0A6598006BE2E9 /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB7D9A082C0A6598006BE2E9 /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

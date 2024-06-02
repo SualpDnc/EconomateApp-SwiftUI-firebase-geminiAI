@@ -17,7 +17,31 @@ class OcrManager: ObservableObject {
 
     
     func imageProcess(image: UIImage) async {
-        let prompt = "You are an OCR reader. Market receipts will be sent to you as pictures. Your task is to output the products written on the market receipts and the prices of these products as a JSON file, based on these grocery receipts. If you think the image is not clear enough, you can simply say The image is not clear enough. sample json:{Ürünler: / Ürün Adı: Naneli Sakız / Fiyat : 15"
+        let prompt = """
+You are an ocr converter.
+Your task is to return the purchased products and the prices of those products as a json from the market receipt images you receive.
+An example json format is as follows:
+JSON
+[
+  {
+    "Product Name": "Vivident Gum Storm",
+    "Amount": 27.50
+  },
+  {
+    "Product Name": "Ulker Choc. Be Happy C",
+    "Amount": 30.00
+  },
+  {
+    "Product Name": "Uludag Premium Cream",
+    "Amount": 6.90
+  },
+  {
+    "Product Name": "JJ Porcelain Ds Figure",
+    "Amount": 55.90
+  }
+]
+
+"""
         
         do {
             let response = try await model.generateContent(prompt, image)
