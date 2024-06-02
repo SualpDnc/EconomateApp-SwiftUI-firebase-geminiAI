@@ -23,7 +23,7 @@ struct MainView: View {
                 Image("economate-logo")
                     .resizable()
                     .frame(width: 170, height: 110)
-                    .padding(.top,20)
+                    .padding(.top,60)
                   
                 Spacer()
                 LazyVGrid(columns: columns){
@@ -32,7 +32,7 @@ struct MainView: View {
                     extractedExpr
                     //FrameworkTitleView(name: "Wallet", imageName: "creditcard.circle")
                     FrameworkTitleView(name: "Receipts", imageName: "newspaper")
-                    FrameworkTitleView(name: "Dashboard", imageName: "chart.bar.xaxis")
+                    //FrameworkTitleView(name: "Dashboard", imageName: "chart.bar.xaxis")
                     //FrameworkTitleView(name: "Profile", imageName: "person")
                     FrameworkTitleView(name: "Settings", imageName: "gearshape")
                 }
@@ -91,11 +91,11 @@ struct MainView_Previews: PreviewProvider {
                             .scaledToFit()
                             .minimumScaleFactor(0.6)
                     }
-                    .padding(7)
+                    .padding(15)
                     .background(
                         RoundedRectangle(cornerRadius: 10)
                             .stroke(Color.white, lineWidth: 0)
-                            .frame(width: 300, height: 120)
+                            .frame(width: 260, height: 123)
                             .background(RoundedRectangle(cornerRadius: 20).fill(Color.teal).opacity(0.1))
                     )
                 }

@@ -17,7 +17,6 @@
 		EB11A9A12BDE8FC000039964 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11A9A02BDE8FC000039964 /* SettingsView.swift */; };
 		EB11A9A72BDEA1DF00039964 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB11A9A62BDEA1DF00039964 /* DashboardView.swift */; };
 		EB233C152BFF9101008388A6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB233C142BFF9101008388A6 /* GoogleService-Info.plist */; };
-		EB233C172BFF919B008388A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB233C162BFF919B008388A6 /* AppDelegate.swift */; };
 		EB233C1C2BFF9273008388A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB233C1B2BFF9273008388A6 /* User.swift */; };
 		EB233C1F2BFF92DD008388A6 /* SignViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB233C1E2BFF92DD008388A6 /* SignViewModel.swift */; };
 		EB233C232C03B649008388A6 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB233C222C03B649008388A6 /* FirebaseManager.swift */; };
@@ -31,6 +30,9 @@
 		EB7D9A0C2C0A66B0006BE2E9 /* OcrManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7D9A0B2C0A66B0006BE2E9 /* OcrManager.swift */; };
 		EBDD3D6A2C07C3900083A843 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDD3D692C07C3900083A843 /* ProfileViewModel.swift */; };
 		EBF883012BF7DEB700209FF6 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF883002BF7DEB700209FF6 /* ImagePicker.swift */; };
+		EBFF3AC52C0CA78F001BEF80 /* Reciepts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFF3AC42C0CA78F001BEF80 /* Reciepts.swift */; };
+		EBFF3AC72C0CC1A6001BEF80 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFF3AC62C0CC1A6001BEF80 /* DashboardViewModel.swift */; };
+		EBFF3AC92C0CC6AD001BEF80 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFF3AC82C0CC6AD001BEF80 /* EmptyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +47,6 @@
 		EB11A9A02BDE8FC000039964 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		EB11A9A62BDEA1DF00039964 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		EB233C142BFF9101008388A6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		EB233C162BFF919B008388A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB233C1B2BFF9273008388A6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EB233C1E2BFF92DD008388A6 /* SignViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewModel.swift; sourceTree = "<group>"; };
 		EB233C222C03B649008388A6 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
@@ -56,6 +57,9 @@
 		EB7D9A0B2C0A66B0006BE2E9 /* OcrManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OcrManager.swift; sourceTree = "<group>"; };
 		EBDD3D692C07C3900083A843 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		EBF883002BF7DEB700209FF6 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		EBFF3AC42C0CA78F001BEF80 /* Reciepts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reciepts.swift; sourceTree = "<group>"; };
+		EBFF3AC62C0CC1A6001BEF80 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		EBFF3AC82C0CC6AD001BEF80 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,13 +101,11 @@
 				EB233C1A2BFF923D008388A6 /* Views */,
 				EB233C192BFF9237008388A6 /* Models */,
 				EB233C182BFF922C008388A6 /* Screen */,
-				EB233C162BFF919B008388A6 /* AppDelegate.swift */,
 				EB11A98A2BDE8B1B00039964 /* EconomateApp.swift */,
 				EB11A98E2BDE8B1C00039964 /* Assets.xcassets */,
 				EB233C142BFF9101008388A6 /* GoogleService-Info.plist */,
 				EB11A9902BDE8B1C00039964 /* Preview Content */,
 				EB7D9A032C0A16E4006BE2E9 /* GenerativeAi-Info.plist */,
-				EB7D9A052C0A173D006BE2E9 /* APIKey.swift */,
 			);
 			path = Economate;
 			sourceTree = "<group>";
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				EB233C1B2BFF9273008388A6 /* User.swift */,
+				EBFF3AC42C0CA78F001BEF80 /* Reciepts.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 		EB233C1A2BFF923D008388A6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EBFF3AC82C0CC6AD001BEF80 /* EmptyView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -156,6 +160,7 @@
 		EB233C212C03B63F008388A6 /* Network Manager */ = {
 			isa = PBXGroup;
 			children = (
+				EB7D9A052C0A173D006BE2E9 /* APIKey.swift */,
 				EB233C222C03B649008388A6 /* FirebaseManager.swift */,
 				EB233C2D2C03B9B1008388A6 /* NetworkManager.swift */,
 				EB7D9A0B2C0A66B0006BE2E9 /* OcrManager.swift */,
@@ -183,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				EB11A9A62BDEA1DF00039964 /* DashboardView.swift */,
+				EBFF3AC62C0CC1A6001BEF80 /* DashboardViewModel.swift */,
 			);
 			path = DashboardView;
 			sourceTree = "<group>";
@@ -290,12 +296,14 @@
 				EB7D9A0C2C0A66B0006BE2E9 /* OcrManager.swift in Sources */,
 				EB233C232C03B649008388A6 /* FirebaseManager.swift in Sources */,
 				EB233C1F2BFF92DD008388A6 /* SignViewModel.swift in Sources */,
+				EBFF3AC72C0CC1A6001BEF80 /* DashboardViewModel.swift in Sources */,
 				EB11A98D2BDE8B1B00039964 /* SignView.swift in Sources */,
+				EBFF3AC92C0CC6AD001BEF80 /* EmptyView.swift in Sources */,
 				EB233C2E2C03B9B1008388A6 /* NetworkManager.swift in Sources */,
 				EB11A99D2BDE8C3800039964 /* ScannerView.swift in Sources */,
 				EB11A99F2BDE8F6700039964 /* ProfileView.swift in Sources */,
 				EBDD3D6A2C07C3900083A843 /* ProfileViewModel.swift in Sources */,
-				EB233C172BFF919B008388A6 /* AppDelegate.swift in Sources */,
+				EBFF3AC52C0CA78F001BEF80 /* Reciepts.swift in Sources */,
 				EB11A9A72BDEA1DF00039964 /* DashboardView.swift in Sources */,
 				EB7D9A062C0A173D006BE2E9 /* APIKey.swift in Sources */,
 				EB11A9A12BDE8FC000039964 /* SettingsView.swift in Sources */,
