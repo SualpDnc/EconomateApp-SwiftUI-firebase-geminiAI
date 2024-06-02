@@ -20,26 +20,31 @@ class OcrManager: ObservableObject {
         let prompt = """
 You are an ocr converter.
 Your task is to return the purchased products and the prices of those products as a json from the market receipt images you receive.
+Send only the json structure as an answer, do not add anything other than that.
+
 An example json format is as follows:
-JSON
-[
-  {
-    "Product Name": "Vivident Gum Storm",
-    "Amount": 27.50
-  },
-  {
-    "Product Name": "Ulker Choc. Be Happy C",
-    "Amount": 30.00
-  },
-  {
-    "Product Name": "Uludag Premium Cream",
-    "Amount": 6.90
-  },
-  {
-    "Product Name": "JJ Porcelain Ds Figure",
-    "Amount": 55.90
-  }
-]
+
+{
+  "products":
+          [
+            {
+              "Product Name": "Vivident Gum Storm",
+              "Amount": 27.50
+            },
+            {
+              "Product Name": "Ulker Choc. Be Happy C",
+              "Amount": 30.00
+            },
+            {
+              "Product Name": "Uludag Premium Cream",
+              "Amount": 6.90
+            },
+            {
+              "Product Name": "JJ Porcelain Ds Figure",
+              "Amount": 55.90
+            }
+          ]
+}
 
 """
         
@@ -49,7 +54,7 @@ JSON
                 DispatchQueue.main.async {
                         print(text)
                         self.ocrText = text
-                    self.fetchFromAPI()
+                    self.sendTextToAPI(text: self.ocrText)
                     //self.sendTextToAPI(text: self.ocrText)
                 }
             }
@@ -59,7 +64,7 @@ JSON
     }
     
     
-  /*  func sendTextToAPI(text: String) {
+    func sendTextToAPI(text: String) {
         guard let url = URL(string: "http://49.13.171.36:8010/upload_bill_mobile") else {
             print("Invalid URL")
             return
@@ -105,7 +110,7 @@ JSON
         }
 
         task.resume()
-    }*/
+    }
     
     
     func fetchFromAPI() {
