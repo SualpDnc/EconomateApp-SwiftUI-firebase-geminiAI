@@ -19,7 +19,7 @@ struct Product: Decodable, Identifiable, Hashable {
     var id = UUID()
     var productName: String
     var amount: String
-    var isLoss: Bool
+    var isLoss: String
     
     enum CodingKeys: String, CodingKey {
         case productName = "Product Name"
