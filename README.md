@@ -1,1 +1,2 @@
-A home economics application with firebase and Gemini API integration. In this project, the user can scan market receipts and see profit-loss analysis compared to other markets. A good example of mvvm architecture and clean coding in swift projects. 
+A home economics application with firebase and Gemini API integration. In this project, the user can scan market receipts and see profit-loss analysis compared to other markets. A good example of mvvm architecture, clean coding, firebase and gemini integrations. in swift projects. 
+![preview]([https://github.com/kullaniciadi/projeadi/raw/main/logo.png](https://github.com/SualpDnc/EconomateApp-firebase-gemini/blob/branch_sualp/IMG_8060.PNG))
