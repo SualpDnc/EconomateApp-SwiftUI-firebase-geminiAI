@@ -1,4 +1,10 @@
-A home economics application utilizing Firebase and Gemini API for comprehensive backend and data processing capabilities. In this project, Firebase is leveraged for secure authentication. The Gemini API is integrated for Image Processing: Advanced OCR (Optical Character Recognition) to scan and analyze market receipts. The application is built with a focus on MVVM architecture and clean coding principles, showcasing advanced integration of Firebase services and external APIs within a Swift environment.
+This application is designed to provide comprehensive home economics management, leveraging advanced technologies for data processing and secure authentication. Built with Swift, the app utilizes Firebase for authentication and integrates the Gemini API for advanced image processing capabilities, specifically Optical Character Recognition (OCR) to scan and analyze market receipts.
+
+####How It Works
+OCR Processing: The Gemini API scans market receipts and returns JSON data with extracted text.
+Data Transmission: The JSON data from Gemini is sent to the backend server.
+Backend Processing: The backend processes the JSON data to extract product information and calculate profit/loss.
+Data Retrieval: The application retrieves the processed product list and profit/loss details from the backend for display to the user.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/01eda218-d694-4c32-bff1-c7dcfe2dd6b7" alt="Image 1" width="200"/>
